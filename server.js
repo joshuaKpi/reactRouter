@@ -19,7 +19,7 @@ const app = express();
 })();
 
 app.get(/.*/, function root(req, res) {
-    res.sendFile(__dirname + 'index.html');
+    res.sendFile(__dirname + '/index.html');
 });
 
 const server = http.createServer(app);
