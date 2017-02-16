@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavLink from '../../components/NavLink';
+import IndexLink from '../../components/IndexLink';
 
 export default class App extends Component {
   render() {
@@ -7,8 +8,9 @@ export default class App extends Component {
       <div className='container'>
         <h1>App</h1>
         <ul className='nav nav-pills'>
-          <li><NavLink to='/admin' activeClassName='active'>Admin</NavLink></li>
-          <li><NavLink to='/list' activeClassName='active'>Genre list</NavLink></li>
+          <li><IndexLink to='/'>Main</IndexLink></li>
+          <li><NavLink to='/admin'>Admin</NavLink></li>
+          <li><NavLink to='/list'>Genre list</NavLink></li>
         </ul>
         {this.props.children}
       </div>
