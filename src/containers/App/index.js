@@ -9,8 +9,9 @@ export default class App extends Component {
         <h1>App</h1>
         <ul className='nav nav-pills'>
           <li><IndexLink to='/'>Main</IndexLink></li>
-          <li><NavLink to='/admin'>Admin</NavLink></li>
+          <li><NavLink to='/admin'>Administrate</NavLink></li>
           <li><NavLink to='/list'>Genre list</NavLink></li>
+          <li><NavLink to='/login'>LogIn</NavLink></li>
         </ul>
         {this.props.children}
       </div>
