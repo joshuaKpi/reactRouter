@@ -30,7 +30,7 @@ export function login(payload) {
       dispatch({
         type: ROUTING,
         payload: {
-          method: 'push',
+          method: 'replace',
           nextUrl: '/admin'
         }
       })
